@@ -1,0 +1,5 @@
+
+In this example, the "express" and "ejs" packages are specified as dependencies with their respective versions. You can add more dependencies as needed for your project.
+
+To install the dependencies specified in the package.json file, you can run the following command in the project directory:
+

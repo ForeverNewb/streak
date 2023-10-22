@@ -1,0 +1,34 @@
+<!-- 
+This file is the view template for displaying the habits.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Habit Tracker</h1>
+  <form action="/habits" method="POST">
+    <input type="text" name="habitName" placeholder="Enter habit name" required>
+    <button type="submit">Add Habit</button>
+  </form>
+  <table>
+    <tr>
+      <th>Habit</th>
+      <% for (let date of dates) { %>
+        <th><%= date %></th>
+      <% } %>
+    </tr>
+    <% for (let habit of habits) { %>
+      <tr>
+        <td><%= habit.name %></td>
+        <% for (let date of dates) { %>
+          <td style="background-color: <%= habit.getGreenShade(date, 7) %>" onclick="updateHabitDate('<%= habit.id %>', '<%= date %>')"></td>
+        <% } %>
+      </tr>
+    <% } %>
+  </table>
+  <script src="/script.js"></script>
+</body>
+</html>

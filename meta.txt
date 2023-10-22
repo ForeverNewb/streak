@@ -1,0 +1,30 @@
+Task:
+Develop a web app using JS and Node.js. Features are create new habits I wish to track, each habit enty will contain habit habit name and can be changed anytime. Habits are listed in the left side as a row, then dates are listed as column. when a cell under a date is clicked in the row habit, it will be colored green. The longer the streak, the darker the green it gets, use 7 shades of green only. 
+
+Config:
+ChatEnvConfig.clear_structure: True
+ChatEnvConfig.git_management: False
+ChatEnvConfig.gui_design: True
+
+
+Roster:
+Chief Executive Officer, Counselor, Chief Human Resource Officer, Chief Product Officer, Chief Technology Officer, Programmer, Code Reviewer, Software Test Engineer, Chief Creative Officer
+
+Modality:
+web application
+
+Ideas:
+
+
+Language:
+ JavaScript
+
+Code_Version:
+4.0
+
+Proposed_images:
+0
+
+Incorporated_images:
+0
+
